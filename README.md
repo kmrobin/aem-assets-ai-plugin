@@ -8,20 +8,28 @@ A Coworker marketplace plugin providing two skills for AEM DAM operations:
 
 ## Installation
 
-Add this repository as a marketplace in your Coworker settings.
+Add this GitHub repository as a marketplace in your Coworker settings:
+```
+kmrobin/aem-assets-ai-plugin
+```
+
+Then install the `aem-assets-ai-plugin` plugin from the marketplace.
 
 ## Repository Structure
 
 ```
 .claude-plugin/
-└── marketplace.json          ← Required by Coworker
-skills/
-├── aem-assets-deep-content-search/
-│   ├── SKILL.md
-│   └── scripts/
-│       └── deep_content_search.py
-└── aem-assets-upload-versioning/
-    └── SKILL.md
+└── marketplace.json                    ← Marketplace registry (required by Coworker)
+plugins/
+└── aem-assets-ai-plugin/
+    ├── plugin.json                     ← Plugin manifest
+    └── skills/
+        ├── aem-assets-deep-content-search/
+        │   ├── SKILL.md
+        │   └── scripts/
+        │       └── deep_content_search.py
+        └── aem-assets-upload-versioning/
+            └── SKILL.md
 README.md
 ```
 
