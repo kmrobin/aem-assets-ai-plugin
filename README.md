@@ -1,6 +1,6 @@
-# AEM Assets Deep Content Search & Upload Plugin
+# AEM Assets AI Plugin
 
-A Coworker plugin providing two skills for AEM DAM operations that go beyond native AEM capabilities:
+A Coworker marketplace plugin providing two skills for AEM DAM operations:
 
 1. **aem-assets-deep-content-search** — Semantic search inside document content (PDF/DOCX body text) via text renditions, with automatic fallback when AEM metadata search returns nothing.
 
@@ -8,22 +8,21 @@ A Coworker plugin providing two skills for AEM DAM operations that go beyond nat
 
 ## Installation
 
-Add this plugin to your Coworker via the GitHub integration:
-1. Push this repository to GitHub
-2. In Coworker settings, add the GitHub repo as a plugin source
-3. Both skills will be available automatically
+Add this repository as a marketplace in your Coworker settings.
 
-## Plugin Structure
+## Repository Structure
 
 ```
-plugin.json                          # Plugin manifest
+.claude-plugin/
+└── marketplace.json          ← Required by Coworker
 skills/
 ├── aem-assets-deep-content-search/
-│   ├── SKILL.md                     # Skill definition
+│   ├── SKILL.md
 │   └── scripts/
-│       └── deep_content_search.py   # Reference implementation
+│       └── deep_content_search.py
 └── aem-assets-upload-versioning/
-    └── SKILL.md                     # Skill definition
+    └── SKILL.md
+README.md
 ```
 
 ## Prerequisites
