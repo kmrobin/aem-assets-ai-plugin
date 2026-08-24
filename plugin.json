@@ -1,0 +1,41 @@
+{
+  "name": "aem-assets-deep-content-search-and-upload",
+  "version": "1.0.0",
+  "description": "AEM DAM deep content search (text rendition semantic search) and proper binary upload with versioning support for AEM as a Cloud Service.",
+  "author": "KM Robin",
+  "skills": [
+    {
+      "name": "aem-assets-deep-content-search",
+      "description": "Search inside document content (PDF/DOCX body text) using text renditions when AEM metadata search returns no results. Automatically falls back to fetching cqdam.text.txt renditions and applying AI semantic matching.",
+      "triggers": [
+        "find documents about",
+        "search PDFs for keyword",
+        "which files mention",
+        "find assets containing",
+        "search inside documents for",
+        "locate files about",
+        "full text search",
+        "content search",
+        "search document body"
+      ]
+    },
+    {
+      "name": "aem-assets-upload-versioning",
+      "description": "Upload files to AEM DAM using the correct 3-step Cloud Service binary upload protocol (initiateUpload → blob PUT → completeUpload). Supports both new asset creation and versioning existing assets with labels and comments.",
+      "triggers": [
+        "upload to AEM",
+        "save as new version",
+        "replace the file in AEM",
+        "put this back in DAM",
+        "update the asset",
+        "upload modified file",
+        "version up the asset",
+        "upload to /content/dam"
+      ]
+    }
+  ],
+  "dependencies": {
+    "services": ["aem"],
+    "skills": ["aem-assets-discovery"]
+  }
+}
