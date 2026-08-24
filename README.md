@@ -12,7 +12,7 @@ AEM DAM deep content search and binary upload with versioning for AEM as a Cloud
 
 ```bash
 /plugin marketplace add kmrobin/aem-assets-ai-plugin
-/plugin install aem-assets-ai-plugin
+/plugin install aem-assets-ai-plugin@aem-assets-ai
 ```
 
 See [`plugins/aem-assets-ai-plugin/`](plugins/aem-assets-ai-plugin) for available skills.
