@@ -1,3 +1,20 @@
+---
+name: aem-assets-upload-versioning
+description: >
+  Upload files to AEM DAM using the correct 3-step Cloud Service binary upload
+  protocol (initiateUpload, blob PUT, completeUpload). Supports both new asset
+  creation and versioning existing assets with labels and comments. Use this
+  after editing a PDF/Word/image to put it back in AEM as a new version.
+  Triggers: upload to AEM, save as new version, replace the file in AEM,
+  put this back in DAM, update the asset, upload modified file, version up,
+  upload to content dam.
+type: skill
+license: Apache-2.0
+metadata:
+  author: KM Robin
+  version: "1.0"
+---
+
 # AEM Assets Upload & Versioning
 
 > **Tools:** `api_request` (service="aem"), `execute_code`, `bash`, `read`

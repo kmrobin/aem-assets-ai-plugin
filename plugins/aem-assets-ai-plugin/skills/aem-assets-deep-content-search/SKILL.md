@@ -1,3 +1,20 @@
+---
+name: aem-assets-deep-content-search
+description: >
+  Search inside document content (PDF/DOCX body text) using extracted text
+  renditions when AEM metadata search returns no results. Two-phase approach:
+  first tries AEM native metadata search, then falls back to fetching
+  cqdam.text.txt renditions and applying AI-powered semantic matching.
+  Triggers: find documents about, search PDFs for keyword, which files mention,
+  find assets containing, search inside documents, full text search, content search,
+  locate files about.
+type: skill
+license: Apache-2.0
+metadata:
+  author: KM Robin
+  version: "1.0"
+---
+
 # AEM Assets Deep Content Search
 
 > **Tools:** `api_request` (service="aem"), `bash`, `execute_code`, `read`

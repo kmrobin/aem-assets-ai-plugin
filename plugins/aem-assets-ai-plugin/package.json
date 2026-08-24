@@ -1,0 +1,12 @@
+{
+  "name": "aem-assets-ai-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AEM DAM deep content search (text rendition semantic search) and proper binary upload with versioning support for AEM as a Cloud Service.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmrobin/aem-assets-ai-plugin.git"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,40 +1,22 @@
-# AEM Assets AI Plugin
+# AEM Assets AI Plugin — Marketplace
 
-A Coworker marketplace plugin providing two skills for AEM DAM operations:
+AEM DAM deep content search and binary upload with versioning for AEM as a Cloud Service. This repo is a Coworker plugin marketplace ([`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json)); each plugin lives under `plugins/<plugin-name>/`.
 
-1. **aem-assets-deep-content-search** — Semantic search inside document content (PDF/DOCX body text) via text renditions, with automatic fallback when AEM metadata search returns nothing.
+## Plugins
 
-2. **aem-assets-upload-versioning** — Correct 3-step binary upload protocol for AEM as a Cloud Service, supporting both new assets and versioning existing assets.
+| Plugin | Description |
+|--------|-------------|
+| [`aem-assets-ai-plugin`](plugins/aem-assets-ai-plugin) | Deep content search (text rendition semantic search) and proper binary upload with versioning support for AEM as a Cloud Service. |
 
-## Installation
+## Install
 
-Add this GitHub repository as a marketplace in your Coworker settings:
-```
-kmrobin/aem-assets-ai-plugin
-```
-
-Then install the `aem-assets-ai-plugin` plugin from the marketplace.
-
-## Repository Structure
-
-```
-.claude-plugin/
-└── marketplace.json                    ← Marketplace registry (required by Coworker)
-plugins/
-└── aem-assets-ai-plugin/
-    ├── plugin.json                     ← Plugin manifest
-    └── skills/
-        ├── aem-assets-deep-content-search/
-        │   ├── SKILL.md
-        │   └── scripts/
-        │       └── deep_content_search.py
-        └── aem-assets-upload-versioning/
-            └── SKILL.md
-README.md
+```bash
+/plugin marketplace add kmrobin/aem-assets-ai-plugin
+/plugin install aem-assets-ai-plugin
 ```
 
-## Prerequisites
+See [`plugins/aem-assets-ai-plugin/`](plugins/aem-assets-ai-plugin) for available skills.
 
-- AEM as a Cloud Service author instance
-- `aem` API service configured in the Coworker agent manifest
-- Text extraction enabled on the AEM instance (default for AEMaaCS)
+## License
+
+Apache 2.0
