@@ -1,0 +1,30 @@
+{
+  "name": "aem-assets-ai-plugin",
+  "version": "1.0.0",
+  "description": "Search and perform asset operations in AEM as a cloud service DAM e.g. Searching in docs, creating a new asset, creating new version of asset in AEM DAM etc.",
+  "author": {
+    "name": "Adobe"
+  },
+  "repository": "https://github.com/kmrobin/aem-assets-ai-plugin",
+  "license": "Apache-2.0",
+  "skills": [
+    "./skills/aem-assets-deep-content-search",
+    "./skills/aem-assets-upload-versioning"
+  ],
+  "mcpServers": {
+    "aem-content-prod": {
+      "type": "http",
+      "url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
+    },
+    "adobe-experience-manager": {
+      "type": "http",
+      "url": "https://mcp.adobeaemcloud.com/adobe/mcp/aem"
+    }
+  },
+  "keywords": [
+    "create-version-of-document",
+    "search-in-documents",
+    "search-in-aem-files",
+    "search-in-assets"
+  ]
+}
