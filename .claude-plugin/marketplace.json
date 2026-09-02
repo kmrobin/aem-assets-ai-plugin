@@ -1,10 +1,17 @@
 {
+  "name": "aem-assets-ai",
+  "owner": {
+    "name": "Adobe SV Demo Team"
+  },
+  "metadata": {
+    "description": "AEM DAM deep content search (text rendition semantic search) and proper binary upload with versioning support for AEM as a Cloud Service",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "aem-assets-ai-plugin",
-      "version": "1.0.0",
-      "description": "AEM DAM deep content search (text rendition semantic search) and proper binary upload with versioning support for AEM as a Cloud Service.",
-      "path": "plugins/aem-assets-ai-plugin"
+      "source": "./plugins/aem-assets-ai-plugin",
+      "description": "Search and perform asset operations in AEM as a cloud service DAM e.g. Searching in docs, creating a new asset, creating new version of asset in AEM DAM etc."
     }
   ]
 }
